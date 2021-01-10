@@ -4,6 +4,7 @@
 @import "variables.css";
 @import "row-cards-button.css";
 @import "container.css";
+@import "row.css";
 
 body {
   font-family: "Audiowide", cursive;
