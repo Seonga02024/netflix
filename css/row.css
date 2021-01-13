@@ -1,35 +1,89 @@
+aside {
+  margin: 0px auto;
+  width: 100%;
+  height: 800px;
+}
+
+.first-row {
+  bottom: 200px;
+  position: absolute;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: space-between;
+  margin-right: var(--left-margin);
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.chatnumber {
+  width: 35px;
+  height: 7px;
+  background-color: white;
+  margin-left: 8px;
+}
+
 .row {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
   position: relative;
-  margin-top: 30px;
+  width: 100%;
+  height: auto;
 }
 
 .row h2 {
-  color: red;
+  margin-left: var(--left-margin);
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
   letter-spacing: 2px;
 }
 
 .nav {
+  position: relative;
   width: 100%;
-  height: 220px;
+  height: 300px;
   overflow: hidden;
-  padding: 10px 0px;
+  padding: 5px 0px;
   scroll-behavior: smooth;
 }
 
+.prev,
+.next {
+  position: absolute;
+  top: 22.5%;
+
+  transform: translateY(-30%);
+  font-size: 3.5em;
+  background-color: #0009;
+  color: white;
+  padding: 110px 45px;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
 .nav .nav-bar {
-  width: 100%;
-  height: 200px;
   display: flex;
+  position: relative;
+  left: -340px;
 }
 
 .nav-bar .column {
-  min-width: 25%;
+  min-width: 15%;
   height: 100%;
   transition: 0.3s linear;
   cursor: pointer;
+}
+
+.column:nth-child(n + 2) {
+  margin-left: 10px;
 }
 
 .column img {
@@ -37,6 +91,7 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 2%;
 }
 
 .active {
@@ -44,18 +99,19 @@
   border: 1px solid #fff;
 }
 
-.prev,
-.next {
-  position: absolute;
-  top: 40%;
-  font-size: 3.5em;
-  background-color: #0009;
-  color: white;
-  padding: 5px 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
+.column:hover {
+  z-index: 3;
+  transform: scaleX(1.5) scaleY(2);
 }
 
-.next {
-  right: 0;
+.pre-colum img {
+  filter: brightness(40%);
+}
+
+.next-colum img {
+  filter: brightness(40%);
+}
+
+.not-pre img {
+  display: none;
 }
