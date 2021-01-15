@@ -5,11 +5,13 @@
 @import "row-cards-button.css";
 @import "container.css";
 @import "row.css";
+@import "footer.css";
+@import "member.css";
 
 body {
   font-family: "Audiowide", cursive;
   font-family: "Montserrat", sans-serif;
-  height: 1000vh;
+  height: auto;
   background-color: black;
   color: white;
 }

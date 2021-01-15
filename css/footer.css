@@ -1,0 +1,58 @@
+footer {
+  width: 60%;
+  height: 900px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.sns i {
+  color: rgb(138, 138, 138);
+  margin-right: 60px;
+}
+
+.informations {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.info {
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.informations a {
+  margin-top: 30px;
+  font-size: 1.7em;
+  color: rgb(138, 138, 138);
+  text-decoration: none;
+}
+
+.informations a:hover {
+  text-decoration: underline;
+}
+
+.service-code a {
+  font-size: 1.7em;
+  color: rgb(138, 138, 138);
+  text-decoration: none;
+}
+
+.service-code {
+  padding: 13px 13px;
+  width: 145px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid rgb(138, 138, 138);
+}
+
+.service-code a:hover {
+  color: white;
+}
+
+.company-info {
+  font-size: 1.5em;
+  color: rgb(138, 138, 138);
+}
