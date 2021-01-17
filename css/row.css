@@ -5,7 +5,6 @@ aside {
 }
 
 .first-row {
-  bottom: 300px;
   position: absolute;
 }
 
@@ -43,7 +42,12 @@ aside {
   width: 35px;
   height: 7px;
   background-color: white;
+  opacity: 0.5;
   margin-left: 8px;
+}
+
+.current-chat {
+  opacity: 1;
 }
 
 .row {
@@ -66,8 +70,8 @@ aside {
   height: auto;
   overflow: hidden;
   padding: 5px 0px;
-  scroll-behavior: smooth;
   margin-bottom: 70px;
+  scroll-behavior: smooth;
 }
 
 .last-nav {
@@ -80,20 +84,26 @@ aside {
 
 .prev,
 .next {
+  top: 50%;
   position: absolute;
-  top: 22.5%;
-
   transform: translateY(-30%);
   font-size: 3.5em;
-  background-color: #0009;
+  background-color: black;
   color: white;
   padding: 110px 45px;
   cursor: pointer;
+  opacity: 0.8;
+  border-radius: 5%;
 }
 
 .long-prev,
 .long-next {
-  padding: 800px 45px;
+  padding: 700px 45px;
+  top: 25%;
+}
+
+.btn-none {
+  display: none;
 }
 
 .next {
@@ -145,4 +155,23 @@ aside {
 
 .not-pre img {
   display: none;
+}
+
+.char-title-hover {
+  opacity: 0;
+  right: 30px;
+}
+
+.char-title:hover .char-title-hover {
+  animation: fadeout 0.2s linear forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(30px);
+    opacity: 1;
+  }
 }
